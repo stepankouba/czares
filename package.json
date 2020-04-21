@@ -1,0 +1,32 @@
+{
+  "name": "czares-api",
+  "version": "0.1.0",
+  "description": "NodeJS API handler for ARES requests (Czech register of economic subjects)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"test/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepankouba/czares-api.git"
+  },
+  "keywords": [
+    "ARES",
+    "API"
+  ],
+  "author": "Stepan Kouba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stepankouba/czares-api/issues"
+  },
+  "homepage": "https://github.com/stepankouba/czares-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.1"
+  }
+}
