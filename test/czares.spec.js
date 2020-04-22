@@ -18,7 +18,7 @@ describe('Ares SDK basic functions', () => {
                 expect(data).to.have.property('idNumber');
                 expect(data.idNumber).equals('45244782');
                 expect(data.isVAT).to.be.true;
-                expect(data).to.have.property('TaxIdNumber');
+                expect(data).to.have.property('taxIdNumber');
                 done();
             }).catch(err => {
                 console.error(err);
@@ -34,7 +34,7 @@ describe('Ares SDK basic functions', () => {
                 expect(data).to.have.property('idNumber');
                 expect(data.idNumber).equals('71700650');
                 expect(data.isVAT).to.be.false;
-                expect(data).to.have.property('TaxIdNumber');
+                expect(data).to.have.property('taxIdNumber');
                 done();
             }).catch(err => {
                 console.error(err);
