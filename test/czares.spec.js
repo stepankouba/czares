@@ -26,13 +26,13 @@ describe('Ares SDK basic functions', () => {
             });
     });
 
-    it('Get by Identification Number - freelancer', done => {
+    it('Get by Identification Number - freelancer - without VAT', done => {
         const ares = new CZAres();
 
-        ares.getByIdentificationNumber('71700650')
+        ares.getByIdentificationNumber('09254447')
             .then(data => {
                 expect(data).to.have.property('idNumber');
-                expect(data.idNumber).equals('71700650');
+                expect(data.idNumber).equals('09254447');
                 expect(data.isVAT).to.be.false;
                 expect(data).to.have.property('taxIdNumber');
                 done();
@@ -47,13 +47,14 @@ describe('Ares SDK basic functions', () => {
 
         ares.isVATRegistered('71700650')
             .then(data => {
-                expect(data).to.be.false;
+                expect(data).to.be.true;
                 done();
             }).catch(err => {
                 console.error(err);
                 done();
             });
     });
+
 
     it('Is VAT registered - company', done => {
         const ares = new CZAres();
