@@ -1,6 +1,6 @@
 {
   "name": "czares",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeJS API handler for ARES requests (Czech registry of economic subjects)",
   "main": "index.js",
   "scripts": {
